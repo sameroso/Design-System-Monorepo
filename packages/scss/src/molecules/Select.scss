@@ -1,0 +1,77 @@
+@import "foundation/all";
+
+.dse-select {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  &__label {
+    @include padding("xs");
+    align-items: center;
+    background: $form-bg-color;
+    border: 1px solid $form-border-color;
+
+    cursor: pointer;
+    display: flex;
+
+    font-family: $body-font-family;
+    justify-content: space-between;
+  }
+
+  &__caret {
+    transition: all 250ms ease;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+
+    &--closed {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__overlay {
+    @include padding("none");
+    @include margin("none");
+    background-color: $form-bg-color;
+
+    border: 1px solid $form-border-color;
+
+    box-shadow: map-get($shadows, "base");
+    display: none;
+
+    list-style-type: none;
+
+    position: absolute;
+
+    width: 100%;
+    z-index: 99;
+  }
+
+  &__option {
+    @include padding("xs");
+    align-items: center;
+
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__option--highlighted {
+    background-color: $form-bg-color-hover;
+  }
+
+  &__option--selected {
+    background-color: $form-bg-option-selected;
+    color: $form-color-option-selected;
+  }
+}
+
+.dse-select__overlay {
+  &--open {
+    display: block;
+  }
+}
