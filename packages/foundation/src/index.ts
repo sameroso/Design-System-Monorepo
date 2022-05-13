@@ -1,5 +1,4 @@
-import Spacing from './Spacing'
+import Spacing from "./Spacing";
+import FontSize from "./FontSize";
 
-export {
-    Spacing
-}
+export { Spacing, FontSize };
