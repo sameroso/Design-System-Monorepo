@@ -16,7 +16,7 @@ const options = [{
 }]
 
 export default {
-    title: 'Molecules/Select',
+    title: 'Molecules/Selects',
 }
 
 export const Common = () => <Select options={options} />
