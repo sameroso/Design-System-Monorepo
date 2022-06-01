@@ -12,6 +12,7 @@
     "@types/jest": "^27.5.1",
     "@types/react": "^18.0.9",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "react": "^18.1.0",
     "rollup": "^2.72.1",
     "rollup-plugin-typescript2": "^0.31.2",
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "test": "jest --verbose",
+    "test:watch": "yarn test --watch"
   }
 }

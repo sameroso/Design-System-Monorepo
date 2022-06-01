@@ -7,7 +7,6 @@ import "@ds/scss/lib/Text.css";
 import "@ds/scss/lib/Margin.css";
 import "@ds/scss/lib/Select.css";
 
-
 const options = [
   {
     label: "Strict Black",
