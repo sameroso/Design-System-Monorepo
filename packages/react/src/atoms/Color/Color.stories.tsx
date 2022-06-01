@@ -30,8 +30,8 @@ export default {
   },
   args: {
     hexCode: "pink",
-    width: "xxxl",
-    height: "xxxl",
+    width: Spacing.xxxs,
+    height: Spacing.xxxs,
   },
 };
 
